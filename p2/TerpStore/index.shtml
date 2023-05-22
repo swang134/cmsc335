@@ -1,0 +1,22 @@
+<!-- You implement -->
+<!doctype html>
+<html lang="en">
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terp Store.</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+   
+    <body>
+        <div class="border">
+            <h1><span>Terp Store</span></h1>
+            <div class="center">
+                <p class="middle"><a class="new" href="catalogInquiry.shtml">Catalog Inquiry</a>
+                <br><a class="new" href="placingOrder.shtml">Placing Order</a></p>
+                <!--#include virtual="footer.shtml" -->
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!-- You implement -->
+<!doctype html>
+<html lang="en">
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catalog Inquiry</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+   
+    
+    <body>
+        <div class="border">
+            <h1><span>Catalog Inquiry</span></h1>
+            <div class="form">
+                <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+                    <label><u>Item Category</u></label>
+                    <input list="item-choice" name="item-choice" required autofocus>
+                    <datalist id="item-choice">
+                        <option value="clothes">
+                        <option value="books">
+                        <option value="music">
+                        <option value="food">
+                        <option value="other">
+                    </datalist>
+                    <br>
+                    
+                    <label><u>Maximum Cost($)</u>  </label>
+                    <input name="maximumCost" id="MC" type="number" min="1" max="100" step="5" value="1">
+                    <br>
+                    
+                    <label><input type="checkbox" name="availableOnCampus"><u>Available on Campus</u></label><br>
+                    <label><input type="checkbox" name="availableOnline" checked><u>Available Online</u></label><br>
+                    
+                    <label><u>Additional Information</u></label><br>
+                    <textarea name="info" rows="10" cols="62"></textarea><br>
+                    
+                    <u>Contact Email Address:</u>  <input name="email" type="text" placeholder="example@terpmail.umd.edu" size="4">
+                    <br>
+                    
+                    <input type="submit" value="Submit Inquiry">      
+                    <input type="reset" value="Clear">
+                    <br><br>
+                </form>
+            </div>
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </body>
+</html>
