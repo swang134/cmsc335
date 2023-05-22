@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Photo Viewer</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="code.js"></script>
+    </head>
+   
+    <body>
+        <div class="border">
+            <h1><u>Photo Viewer</u></h1>
+            <img src="InitialImage.jpg" id="img" alt="animationImg"/>
+            <form>
+                <fieldset>
+                    <legend>
+                        <strong>Loading Data</strong>
+                    </legend>
+
+                    <label>Photo's Folder: <input type="text" value="umcp/" id="path" /></label>
+                    <label>Common Name: <input type="text" value="college" id="name" /></label><br>
+                    <label>Start Photo Number: <input type="text" value="2" id="start" /></label>
+                    <label>End Photo Name: <input type="text" value="4" id = "end" /></label><br>
+                    <input type="button" onclick="load()" value="Load Photos">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>
+                        <strong>Iteraling</strong>
+                    </legend>
+                    <input type="button" onclick="previous()" value="Previous Photo">
+                    <input type="button" onclick="next()" value="Next Photo">
+                    <input type="button" onclick="first()" value="First Photo">
+                    <input type="button" onclick="last()" value="Last Photo">
+                </fieldset>
+                
+                <fieldset>
+                    <legend><strong>SlideShows</strong>
+                    </legend>
+                    <input type="button" onclick="inorder()" value="SlideShow">
+                    <input type="button" onclick="random()" value="RandomSlideShow">
+                    <input type="button" onclick="stopAnimation()" value="StopSlideShow">
+                </fieldset>
+                
+                <fieldset>
+                    <legend><strong>Status</strong>
+                    </legend>
+                    <label>Photo Being Displayed: <input type="text" value="Initiallmage.jpg" id="display"/></label><br>
+                    <div class="bigred" id="msg">Photo Viewer System</div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

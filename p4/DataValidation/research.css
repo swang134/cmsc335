@@ -1,0 +1,111 @@
+html{ 
+   font-family: Arial, Helvetica, sans-serif; 
+} 
+body{
+    background-color: white;
+}
+
+h1{
+    font-size: 200%;
+    text-shadow: 5px 5px 3px lightgray; 
+    z-index: 1;
+}
+
+form{
+    width: 52rem;
+}
+
+u{
+    z-index: -1;
+}
+fieldset{
+    border-radius: 10px;
+    border: 3px silver ridge;
+    margin-top: 1rem;
+}
+legend{
+    color: #A0522D;
+    font-weight: bold;
+    font-style: italic;
+}
+input[type=text]{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: black;
+    border: 1px gray solid;
+    border-radius: 5px;
+    height: 1.8rem;
+    width: 16rem;
+    font-size: 110%;
+}
+input[type=number]{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: black;
+    border: 1px gray solid;
+    border-radius: 5px;
+    height: 1.8rem;
+    width: 4rem;
+    font-size: 110%;
+}
+input[type=email]{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: black;
+    border: 1px gray solid;
+    border-radius: 5px;
+    height: 1.8rem;
+    font-size: 110%;
+    width: 28rem;
+}
+
+input[type=text].small{
+    width: 4rem;
+}
+
+
+.left{
+    margin-left: 1rem;
+}
+
+.up{
+    margin-top: 1rem;
+}
+
+input[type=checkbox]{
+    margin-top: 8px;
+}
+
+input[type=radio]{
+    margin-top: 8px;
+}
+
+hr{
+    border: 1px gray solid;
+    width: 52rem;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p{
+    margin-left: 20rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+textarea{
+    border: 2px silver solid;
+    border-radius: 5px;
+}
+
+select{
+    font-size: 110%;
+}
+

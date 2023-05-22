@@ -1,0 +1,73 @@
+
+body{
+    background-color: silver;
+}
+
+.border {
+    height: 55rem;
+    width: 50rem;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    background: silver;
+    z-index: -1;
+    position: absolute;/* pick as reference for pseudo absolute */
+}
+/* size pseudo within from coordonates */
+.border:before {
+    content:"";
+    top:1rem;
+    left:1rem;
+    right:1rem;
+    bottom:1rem;
+    border: brown 0.8rem groove;
+    z-index: -1;
+    position: absolute;
+}
+.border:after {
+    content:"";
+    top:3rem;
+    left:3rem;
+    right:3rem;
+    bottom:3rem;
+    border: cornsilk 1rem ridge;
+    background: white;
+    z-index: -1;
+    position: absolute;
+}
+
+img {
+    border: black solid 0.3rem;
+    margin-left: 1.5rem;
+    width:42rem;
+    height:25rem;
+    background-size: cover;
+}
+
+fieldset{
+    width: 43.8rem;
+    border: 2px silver solid;
+}
+
+input[type=text]{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+    color: black;
+    border: 2px silver solid;
+}
+
+input[type=button]{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 2px silver solid;
+    height:1.5rem;
+}
+
+#display{
+    color: gray;
+}
+
+.bigred{
+    color: red;
+    font-size: 150%;
+}
