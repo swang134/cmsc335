@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    font-family: Rancho;
+    color: antiquewhite;
+    font-size: 500%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+body {
+    background-image: url("https://data.whicdn.com/images/318091434/original.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+caption{
+    font-family: Audiowide;
+    color: antiquewhite;
+}
+
+table, th, td {
+    border: 0.1rem solid antiquewhite;
+    font-family: Audiowide;
+    font-family: Audiowide;
+    color: antiquewhite;
+    border-radius: 0.5rem;
+    
+}
+caption{
+    font-size: 120%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color:antiquewhite;
+}
+p {
+    color:antiquewhite;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    font-family: Audiowide;
+    font-size: 130%
+}
+@keyframes example {
+    0%   {color: antiquewhite;}
+    25%  {color: pink;}
+    50%  {color: hotpink;}
+    75%  {color: pink;}
+    100% {color: antiquewhite;}
+}

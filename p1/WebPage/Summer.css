@@ -1,0 +1,83 @@
+/* Do not remove this rule */
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: white;
+}
+
+table, th, td {
+    border:0.1rem solid black;
+}
+
+th{
+    background-color: antiquewhite;
+    color: brown;
+}
+
+caption{
+    color: blue;
+}
+
+#special:first-letter {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#special:hover {
+    color: red;
+}
+
+p.color{
+    color: brown;
+}
+
+img.first {
+    height: 7rem;
+    width: 8rem;
+}
+img.second {
+    height: 6rem;
+    width: 36rem;
+}
+
+body{
+    background: antiquewhite;
+}
+.border {
+    height: 55rem;
+    width: 45rem;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: antiquewhite;
+    z-index: -1;
+    position: absolute;/* pick as reference for pseudo absolute */
+}
+/* size pseudo within from coordonates */
+.border:before {
+    content:"";
+    top:1rem;
+    left:2rem;
+    right:2rem;
+    bottom:1rem;
+    border: brown 0.8rem double;
+    z-index: -1;
+    position: absolute;
+}
+.border:after {
+    content:"";
+    top:2.5rem;
+    left:3.5rem;
+    right:3.5rem;
+    bottom:2.5rem;
+    border: blue 1rem ridge;
+    background: white;
+    z-index: -1;
+    position: absolute;
+}
+
+
